@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+.header{
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  margin-top: 0%;
+  margin: auto;
+  height: 15vh;
+  clear: both;
+  position: absolute;
+  left: 0;
+  top: 0 ;
+  text-align: justify;
+  width: 97vw;
+  overflow-x:hidden;
+}
+
+.grid-container{
+  display: grid ;
+  grid-template-columns: auto auto auto auto auto auto;
+
+}
+
+#logo-grid{
+  grid-row: 1;
+  grid-column: 1;
+}
