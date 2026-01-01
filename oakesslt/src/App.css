@@ -6,16 +6,16 @@
 }
 
 .logo {
-  height: 6em;
+  height: 5em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #60832c);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #9ac445);
 }
 
 @keyframes logo-spin {
@@ -37,13 +37,9 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
-
 .header{
   padding: 20px;
-  background-color: rgb(27, 27, 27);
+  background-color: #f0f5e5;
   margin-top: 0%;
   margin: auto;
   height: 15vh;
@@ -58,11 +54,37 @@
 
 .grid-container{
   display: grid ;
-  grid-template-columns: auto auto auto auto auto auto;
-
+  grid-template-columns: auto auto auto auto auto ;
 }
+
+.grid-container-footer{
+  display: grid ;
+  grid-template-columns: auto auto auto auto auto ;
+  justify-content: center;
+}
+
 
 #logo-grid{
   grid-row: 1;
   grid-column: 1;
+}
+
+.logo-footer {
+  height: 5em;
+  padding: 1.5em;
+}
+
+#footer1{
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#footer2{
+  grid-row: 1;
+  grid-column: 3;
+}
+
+#footer3{
+  grid-row: 1;
+  grid-column: 4;
 }
