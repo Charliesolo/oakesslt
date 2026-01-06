@@ -17,6 +17,9 @@ function Header() {
             <Link to='/testimonials'>
                 <p>Testimonials</p>
             </Link>
+            <Link to='/contact'>
+                <p>Contact Us</p>
+            </Link>
             
         </nav>
      </div>
