@@ -35,26 +35,27 @@ function Contact() {
   };
 
   return (
-    <div className="form-container">
+    <div >
+        <div className="form-container">
+        <form onSubmit={sendEmail}>
+            <legend>Contact Us</legend>
+            <label htmlFor="name">Full Name:</label>
+            <input id="name" name="name" type="text" required />
+            <br></br>
 
-      <form onSubmit={sendEmail}>
-        <legend>Contact Us</legend>
-        <label htmlFor="name">Full Name:</label>
-        <input id="name" name="name" type="text" required />
-        <br></br>
+            <label htmlFor="email">Email:</label>
+            <input id="email" name="email" type="email" required />
+            <br></br>
 
-        <label htmlFor="email">Email:</label>
-        <input id="email" name="email" type="email" required />
-        <br></br>
+            <label htmlFor="message">Write a message:</label>
+            <textarea id="message" name="message" required />
+            <br></br>
 
-        <label htmlFor="message">Write a message:</label>
-        <textarea id="message" name="message" required />
-        <br></br>
+            <input type="submit" value="Send" disabled={isSubmitting} />
 
-        <input type="submit" value="Send" disabled={isSubmitting} />
-
-        {stateMessage && <p>{stateMessage}</p>}
-      </form>
+            {stateMessage && <p>{stateMessage}</p>}
+        </form>
+        </div>
     </div>
   );
 }

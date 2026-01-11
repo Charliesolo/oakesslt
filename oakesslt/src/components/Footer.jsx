@@ -5,9 +5,9 @@ import rcslt from '../assets/RCSLT.jpg'
 export default function Footer() {
   return (
     <div className='grid-container-footer'>
-        <img className='logo-footer' id='footer1' src={asltip} alt="ASLTIP Logo" />
-        <img className='logo-footer' id='footer2' src={hcpc} alt="ASLTIP Logo" />
-        <img className='logo-footer'id='footer3' src={rcslt} alt="ASLTIP Logo" />
+        <img className='logo-footer' src={asltip} alt="ASLTIP Logo" />
+        <img className='logo-footer' src={hcpc} alt="ASLTIP Logo" />
+        <img className='logo-footer' src={rcslt} alt="ASLTIP Logo" />
     </div>
   )
 }
