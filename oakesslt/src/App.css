@@ -2,6 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  padding-top: 80px;
 }
 
 body {
@@ -33,14 +34,24 @@ p {
 }
 
 .site-header {
+  width: 100vw;
+  height: 10em;
+  margin-left: calc(50% - 50vw);
   padding: 16px 20px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-top: -2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color:#dfe7d2;
+  color: #fcfcfc;
 }
 
 .header-inner {
   max-width: 1280px;
   margin: 0 auto;
-
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,13 +69,13 @@ p {
   gap: 10px;
 }
 
-.nav a {
+.nav p {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
-.nav a:hover {
+.nav p:hover {
   text-decoration: underline;
 }
 
@@ -103,9 +114,8 @@ p {
   background: #fff;
   padding: 20px;
   margin: 20px auto;
-  width: 95%;
+  width: 100%;
   max-width: 600px;
-
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
@@ -131,11 +141,12 @@ p {
 .form-container input,
 .form-container select,
 .form-container textarea {
+  margin: 12px;
   padding: 12px;
   font-size: 1rem;
   border-radius: 6px;
   border: 1px solid #ccc;
-  width: 100%;
+  width: 90%;
 }
 
 .form-container input:focus,
@@ -157,7 +168,7 @@ p {
   }
 }
 
-.form-container button {
+.submit {
   margin-top: 10px;
   padding: 14px;
   font-size: 1rem;
@@ -166,15 +177,15 @@ p {
   border: none;
   cursor: pointer;
 
-  background: #4f46e5;
+  background: #9ac445;
   color: #fff;
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
-.form-container button:hover {
-  background: #4338ca;
+.submit:hover {
+  background: #60832c;
 }
 
-.form-container button:active {
+.submit:active {
   transform: scale(0.98);
 }

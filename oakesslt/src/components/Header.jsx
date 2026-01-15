@@ -9,16 +9,16 @@ function Header() {
                 <img className='logo' src={logo} alt="A green logo saying Oakes SLT 'Speech and Language Therapy' in a speech bubble" />
             </Link>
             <Link to='/'>
-                <a>Home</a>
+                <p>Home</p>
             </Link>
             <Link to='/services'>
-                <a>Services</a>
+                <p>Services</p>
             </Link>            
             <Link to='/testimonials'>
-                <a>Testimonials</a>
+                <p>Testimonials</p>
             </Link>
             <Link to='/contact'>
-                <a>Contact Us</a>
+                <p>Contact Us</p>
             </Link>
             
         </nav>
