@@ -23,9 +23,9 @@ function Header() {
                 </button>
     
                 <nav className={`nav ${open ? "nav-open" : ""}`}>
-                    <Link to='/services'>Services</Link>            
-                    <Link to='/testimonials'>Testimonials</Link>
-                    <Link to='/contact'>Contact Us</Link>
+                    <Link to='/services' onClick={() => setOpen(false)}>Services</Link>            
+                    <Link to='/testimonials' onClick={() => setOpen(false)}>Testimonials</Link>
+                    <Link to='/contact' onClick={() => setOpen(false)}>Contact Us</Link>
                 </nav>            
             </div>
          </header>
