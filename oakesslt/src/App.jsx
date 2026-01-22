@@ -9,8 +9,10 @@ function App() {
   return (    
     <>
     <Header/>
-    <RoutesComponent/>   
-    <Footer/> 
+    <main className='main-content'>
+    <RoutesComponent/> 
+    </main>
+    <Footer/>
     </>
   )
 }

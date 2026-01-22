@@ -36,7 +36,6 @@ function Contact() {
 
   return (
     <div >
-        <div >
         <form  className="form-container" onSubmit={sendEmail}>
             <legend>Contact Us</legend>
             <label htmlFor="name">Full Name:</label>
@@ -55,7 +54,6 @@ function Contact() {
 
             {stateMessage && <p>{stateMessage}</p>}
         </form>
-        </div>
     </div>
   );
 }
